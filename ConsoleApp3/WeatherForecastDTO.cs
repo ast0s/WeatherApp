@@ -12,13 +12,15 @@ namespace WeatherApp
         public DateTime DateTime { get; set; }
         public double Temp { get; set; }
         public double Humidity { get; set; }
+        public double Wind { get; set; }
 
-        public WeatherForecastDTO(string city, DateTime dateTime, double temp, double humidity)
+        public WeatherForecastDTO(string city, DateTime dateTime, double temp, double humidity, double wind)
         {
             City = city;
             DateTime = dateTime;
             Temp = temp;
             Humidity = humidity;
+            Wind = wind;
         }
     }
 }
